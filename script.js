@@ -2,8 +2,8 @@ var generateBtn = document.querySelector("#generate");
 
 function generatePassword() {
 
-var uppercaseArray = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 var lowercaseArray = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o",  "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+var uppercaseArray = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 var numArray = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 var specialArray = ["@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "=", "+"];
  
@@ -22,15 +22,16 @@ var userArray = [];
     return;
   }
 
-  var uppercase = confirm ("Include uppercase letters in your password?");
   var lowercase = confirm ("Include lowercase letters in your password?");
+  var uppercase = confirm ("Include uppercase letters in your password?");
   var numbers = confirm ("Include numbers in your password?");
   var specialCharacters = confirm ("Include special characters in your password?");
 
 
-if (numbers){
-  resultArray = resultArray.concat(numArray);
-  userArray.push (numArray[Math.floor(Math.random() * numArray.length)]);
+
+if (lowercase){
+  resultArray = resultArray.concat(lowercaseArray);
+  userArray.push (lowercaseArray[Math.floor(Math.random() * lowercaseArray.length)]);
 }
 
 if (uppercase){
@@ -38,17 +39,15 @@ if (uppercase){
   userArray.push (uppercaseArray[Math.floor(Math.random() * uppercaseArray.length)]);
 }
 
-if (lowercase){
-  resultArray = resultArray.concat(lowercaseArray);
-  userArray.push (lowercaseArray[Math.floor(Math.random() * lowercaseArray.length)]);
+if (numbers){
+  resultArray = resultArray.concat(numArray);
+  userArray.push (numArray[Math.floor(Math.random() * numArray.length)]);
 }
 
 if (specialCharacters){
   resultArray = resultArray.concat(specialArray);
   userArray.push (specialArray[Math.floor(Math.random() * specialArray.length)]);
 }
-console.log(resultArray)
-
 
 for (var i = userArray.length; i < numCharacter; i++) {
       
