@@ -7,7 +7,7 @@ This web application is a password generator. You can customize criteria to gene
 
 <img width="912" alt="Screen Shot 2021-07-29 at 11 15 23 PM" src="https://user-images.githubusercontent.com/84681054/127594655-45342e74-a362-405a-aa8a-06a02955eef6.png">
 
-Copyright / 2021 / Noah Macey   
+Copyright / 2021 / Noah Macey  
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
