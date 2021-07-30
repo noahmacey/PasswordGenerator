@@ -1,7 +1,7 @@
 # H3_PasswordGenerator
 This is my live site --> https://noahmacey.github.io/H3_PasswordGenerator/ 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Technologies used: HTML5 & CSS3 
+Technologies used: HTML5 & CSS3  
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 This web application is a password generator. You can customize criteria to generate a random password that fits your needs.
 
